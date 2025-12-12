@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "https://intent-classification-muv8.onrender.com";
 
 export async function predictIntent(text) {
   const res = await fetch(`${API_BASE_URL}/predict`, {
