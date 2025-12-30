@@ -21,7 +21,7 @@ app = FastAPI(
 # CORS so frontend (Vite/React) can call the API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # in production, restrict this
+    allow_origins=["https://intentclass.netlify.app/"],  # in production, restrict this
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
