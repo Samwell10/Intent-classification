@@ -4,6 +4,11 @@ joblib
 scikit-learn
 pydantic
 numpy
+<<<<<<< HEAD
 python-multipart
 anthropic
 python-dotenv
+=======
+gunicorn
+python-multipart
+>>>>>>> 66c1b72ced6793fe27570afe48ba86eb05e17522
