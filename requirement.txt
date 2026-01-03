@@ -5,3 +5,5 @@ scikit-learn
 pydantic
 numpy
 python-multipart
+anthropic
+python-dotenv

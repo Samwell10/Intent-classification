@@ -39,7 +39,6 @@ function App() {
 
   return (
     <>
-      <p>HELPPP</p>
       <ChatLayout
         messages={messages}
         input={input}
