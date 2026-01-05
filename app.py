@@ -8,8 +8,6 @@ from dotenv import load_dotenv
 from utill.predict import predict_intent
 from utill.llm_service import ClaudeLLMService
 
-
-CORS(app, origins=["https://intentclass.netlify.app/"])
 # Load environment variables
 load_dotenv()
 
@@ -35,6 +33,7 @@ app = FastAPI(
 )
 
 # CORS so frontend (Vite/React) can call the API
+CORS(app, origins=["https://intentclass.netlify.app/"])
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://intentclass.netlify.app/"],  # in production, restrict this
