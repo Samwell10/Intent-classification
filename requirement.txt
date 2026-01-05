@@ -9,3 +9,4 @@ anthropic
 python-dotenv
 gunicorn
 python-multipart
+Flask-CORS
