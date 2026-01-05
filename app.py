@@ -1,12 +1,15 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from flask_cors import CORS
 import json
 import os
 from dotenv import load_dotenv
 from utill.predict import predict_intent
 from utill.llm_service import ClaudeLLMService
 
+
+CORS(app, origins=["https://intentclass.netlify.app/"])
 # Load environment variables
 load_dotenv()
 
